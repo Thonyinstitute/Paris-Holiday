@@ -19,24 +19,24 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('paris_holiday')
 
-expense = SHEET.worksheet('expense')
-data = expense.get_all_values()
-
 """
 Google API Verification and figlet print out
 """
 print(pyfiglet.figlet_format('Welcome to Paris'))
-print(data)
 
-
-
-
-
-def get_doc_data():
+def get_expense_data():
     """
-    Ask user for travel documents
+    Requesting expense from user
     """
+    print("Please enter travelling documents.")
+    print("Documents must be three type only.")
+    print("Documents Type are: Passport, Ticket and Cash.")
 
-    print("Submit traveling document")
-    print("Documents should be three")
-    print("documents type are, Passport, Ticket and Cash")
+    data_str = input("Enter your documents here: ")
+    print(f"The documents provided are {data_str}")
+
+get_expense_data()
+
+
+
+
