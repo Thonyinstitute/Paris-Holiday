@@ -19,6 +19,10 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('paris_holiday')
 
+expense = SHEET.worksheet('expense') # expense is declared
+data = expense.get_all_values() # call to get data values from expense data
+print(data)
+
 """
 Google API Verification and figlet print out
 """
@@ -28,14 +32,38 @@ def get_expense_data():
     """
     Requesting expense from user
     """
-    print("Please enter travelling documents.")
-    print("Documents must be three type only.")
-    print("Documents Type are: Passport, Ticket and Cash.")
+    while True:
+        print("Please enter travelling documents.")
+        print("Documents must be three type only.")
+        print("Documents Type are: Passport, Ticket, Money.")
 
-    data_str = input("Enter your documents here: ")
-    print(f"The documents provided are {data_str}")
 
-get_expense_data()
+        data = input("Enter your documents here: ")
+        print(f"The documents provided are {data}")
+
+        expense_data = data.split(",")
+        if validate_data(expense_data): 
+            print("Documents are submitted successfully")
+            break 
+        return expense_data
+
+def validate_data(values):
+    print(values) #  expense data values are printed out
+    """
+    Raise Value error if data values lenght are more than required
+    
+    """
+    try:
+        if len(values) != 3:
+            raise ValueError(
+                f"Three values are required, you provided {len(values)}"
+            )
+    except ValueError as e:
+        print(f"Invalid documents: {e}, please try again")
+        return False
+    return True
+
+data = get_expense_data() # this is the call for expense data values
 
 
 
