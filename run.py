@@ -21,7 +21,6 @@ SHEET = GSPREAD_CLIENT.open('paris_holiday')
 
 expense = SHEET.worksheet('expense') # expense is declared
 data = expense.get_all_values() # call to get data values from expense data
-print(data)
 
 """
 Google API Verification and figlet print out
@@ -30,7 +29,7 @@ print(pyfiglet.figlet_format('Welcome to Paris'))
 
 def get_expense_data():
     """
-    Requesting expense from user
+    Requesting expense from user through a while loop untill 3 valid data request is reach
     """
     while True:
         print("Please enter travelling documents.")
@@ -38,22 +37,21 @@ def get_expense_data():
         print("Documents Type are: Passport, Ticket, Money.")
 
 
-        data = input("Enter your documents here: ")
-        print(f"The documents provided are {data}")
+        data_str = input("Enter your documents here: ")
 
-        expense_data = data.split(",")
+        expense_data = data_str.split(",")
         if validate_data(expense_data): 
             print("Documents are submitted successfully")
             break 
-        return expense_data
+    return expense_data
 
 def validate_data(values):
-    print(values) #  expense data values are printed out
     """
     Raise Value error if data values lenght are more than required
     
     """
     try:
+        [int(value) for value in values]
         if len(values) != 3:
             raise ValueError(
                 f"Three values are required, you provided {len(values)}"
@@ -63,7 +61,19 @@ def validate_data(values):
         return False
     return True
 
-data = get_expense_data() # this is the call for expense data values
+def update_expense_worksheet(data):
+    """
+    Update user information or the worksheet
+    
+    """
+    print("Update user information(expense sheet) on the worksheet")
+    expense_worksheet = SHEET.worksheet('expense')
+    expense_worksheet.append_row(data)
+    print("Update user information(expense sheet) is updated successfully")
+
+data = get_expense_data()
+expense_data = [int(num) for num in data]
+update_expense_worksheet(expense_data)
 
 
 
