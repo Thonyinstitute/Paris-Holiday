@@ -19,57 +19,59 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('paris_holiday')
 
-expense = SHEET.worksheet('expense') # expense is declared
-data = expense.get_all_values() # call to get data values from expense data
+expense = SHEET.worksheet('expense') 
+data = expense.get_all_values() 
+print(data)
 
-"""
-Google API Verification and figlet print out
-"""
+
 print(pyfiglet.figlet_format('Welcome to Paris'))
 
+
 def get_expense_data():
-    """
-    Requesting expense from user through a while loop untill 3 valid data request is reach
-    """
     while True:
-        print("Please enter travelling documents.")
-        print("Documents must be three type only.")
-        print("Documents Type are: Passport, Ticket, Money.")
+        print("Please enter tarvel data")
+        print("Data should be five values, separated by comma")
+        print("Example are: 1,2,3,4,5")
 
 
-        data_str = input("Enter your documents here: ")
+        data_str = input("Please enter data here: ")
+        print(f"Data provided are {data_str}")
 
         expense_data = data_str.split(",")
-        if validate_data(expense_data): 
-            print("Documents are submitted successfully")
-            break 
+        
+
+        if validate_data(expense_data):
+            print("Data are valid")
+            break
+            
     return expense_data
 
 def validate_data(values):
+    print(values)
     """
-    Raise Value error if data values lenght are more than required
     
     """
     try:
         [int(value) for value in values]
-        if len(values) != 3:
+        if len(values) != 5:
             raise ValueError(
-                f"Three values are required, you provided {len(values)}"
+                f"Exactly 5 values required, you provided {len(values)}"
             )
     except ValueError as e:
-        print(f"Invalid documents: {e}, please try again")
+        print(f"Invalid data: {e}, please try again")
         return False
     return True
 
+
 def update_expense_worksheet(data):
     """
-    Update user information or the worksheet
     
     """
-    print("Update user information(expense sheet) on the worksheet")
+    print("Updated expense worksheet.....\n")
     expense_worksheet = SHEET.worksheet('expense')
     expense_worksheet.append_row(data)
-    print("Update user information(expense sheet) is updated successfully")
+    print("Expense worksheet updated successfully")
+
 
 data = get_expense_data()
 expense_data = [int(num) for num in data]
@@ -77,4 +79,5 @@ update_expense_worksheet(expense_data)
 
 
 
+      
 
