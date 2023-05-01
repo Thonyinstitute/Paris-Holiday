@@ -5,6 +5,7 @@ import pyfiglet
 import gspread
 from google.oauth2.service_account import Credentials
 
+
 """
 Google API calling, the url and the attributes
 """
@@ -34,7 +35,7 @@ def get_expense_data():
         print("Example are: 1,2,3,4,5")
 
 
-        data_str = input("Please enter data here: ")
+        data_str = input("Please enter data here:\n")
         print(f"Data provided are {data_str}")
 
         expense_data = data_str.split(",")
