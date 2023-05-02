@@ -1,10 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Paris holiday Application,
-![image](https://user-images.githubusercontent.com/122373462/235650299-b2fdab04-083a-467c-9d3e-43655e3b7179.png)
+
 
 
 The features of the app is to request traveller (user) data and through google API iterate the data to terminal. Through the terminal validate the data, check data error and if required update the data and if the inputted data required id valid, the terminal will print successfully. The App logo is styled with pyfiglet welcome to paris
+
+![image](https://user-images.githubusercontent.com/122373462/235650299-b2fdab04-083a-467c-9d3e-43655e3b7179.png)
 
 ## Reminders
 
