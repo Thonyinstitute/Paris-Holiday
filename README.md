@@ -19,10 +19,12 @@ The features of the app is to request traveller (user) data and through google A
 * If correct data is entered, the app will respond with submitted successfully
 
 Response of Data entered by user.
+
 ![image](https://user-images.githubusercontent.com/122373462/235654563-b28d13d0-35fe-4ea1-b159-49dd867b5882.png)
 
 
 Response to invalid data entered by user and the error message assking user to try again.
+
 ![image](https://user-images.githubusercontent.com/122373462/235655135-ad818423-e3a3-4e38-aa7c-af3969a0858b.png)
 
 Verification of valid data eneterd by user printed out in terminal
@@ -35,6 +37,7 @@ Value added to expense worksheet is the same as user information is updated.
 
 
 ## Creating the Paris holiday app
+
 The inspiration for creating this app was drawn from love-sandwiches and the tools that was used to complete the creation are listed below.
 
 1. `heroku/python`
@@ -44,9 +47,10 @@ The inspiration for creating this app was drawn from love-sandwiches and the too
 5. pyfiglet installation
 
 ## Implemented features
+
 . The file data used in this app is originally from an excel sheet stored in google drive and on google drive created credentials from google library and enabling API to interact through the terminal.
 
-##Bugs
+## Bugs
 
 . I was entering an integer values but I wanted a strings since the app is for user to submit documents and not 1,2,3 format which is int
 I fixed this by not converting the input string to integer.
@@ -60,11 +64,11 @@ I fixed this by not converting the input string to integer.
 | Valid data update expensesheet |     Expense worksheet updated successfully     | As Expected |
 
 
-##CI Python Linter Validation
+## CI Python Linter Validation
 ![image](https://user-images.githubusercontent.com/122373462/235699591-3e2f6cf7-8834-4399-a348-39c579ca690b.png)
 
 
-##Technologies
+## Technologies
 
 . Python is the programming language used to produce the game.
 
@@ -75,7 +79,7 @@ I fixed this by not converting the input string to integer.
 . Heroku was used to deploy the game to the web.
 
 
-##Version Control
+## Version Control
 
 Version control was maintained using git within GitPod and CodeAnywhere to push code to the main repository.
 
@@ -88,7 +92,7 @@ Version control was maintained using git within GitPod and CodeAnywhere to push 
 . To go back and forth between Gitpod and CodeAnywhere workspaces, use the command "git pull" to make sure all data has been brought over before working from the new space.
 
 
-##Page Deployment
+## Page Deployment
 
 . Heroku CLI was used for this game's deployment. Directions on how to do that are as follows:
 
@@ -116,7 +120,7 @@ Version control was maintained using git within GitPod and CodeAnywhere to push 
 
 . Option 2 is selecting Manual deploy (Needs to be manually redeployed after every change, via Heroku deploy tab)
 
-##Credits
+## Credits
 
 . Love sandwiches videos AJGreaves 
 
