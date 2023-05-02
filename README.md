@@ -35,7 +35,7 @@ Value added to expense worksheet is the same as user information is updated.
 
 
 ## Creating the Heroku app
-The inspiration for creating this app was drawn from love-sandwiches and the tools that enable me to complete the creation are listed below.
+The inspiration for creating this app was drawn from love-sandwiches and the tools that was used to complete the creation are listed below.
 
 1. `heroku/python`
 2. `heroku/nodejs`
