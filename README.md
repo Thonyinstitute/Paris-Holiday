@@ -48,14 +48,17 @@ The inspiration for creating this app was drawn from love-sandwiches and the too
 
 ##Bugs
 
-|    Test |    Expected|   Outcome|
-| ---  | --- |
-| Run run.py |Please enter data here:| As Expected|
+
+
+| ------   Test |  ------  Expected|  -------- Outcome|
+
+|---- Run run.py |--------Please enter data here:| -------- As Expected|
 | Input i,2,3, | Loads data are invalid| As Expected|
 | Input i,2,3,4,5 | Loads data are valid| As Expected|
 | Valid data update expensesheet| Expense worksheet updated successfully| As Expected|
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+
+
 
 Connect your GitHub repository and deploy as normal.
 
