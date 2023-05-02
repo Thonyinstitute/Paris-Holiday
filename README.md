@@ -18,19 +18,20 @@ The features of the app is to request traveller (user) data and through google A
 * If incorrect data is entered the App will invalidate the data and request you enter again
 * If correct data is entered, the app will respond with submitted successfully
 
-###Response of Data entered by user.
+Response of Data entered by user.
 ![image](https://user-images.githubusercontent.com/122373462/235654563-b28d13d0-35fe-4ea1-b159-49dd867b5882.png)
 
 
-###Response to invalid data entered by user and the error message assking user to try again.
+Response to invalid data entered by user and the error message assking user to try again.
 ![image](https://user-images.githubusercontent.com/122373462/235655135-ad818423-e3a3-4e38-aa7c-af3969a0858b.png)
 
-###Verification of valid data eneterd by user printed out in terminal
+Verification of valid data eneterd by user printed out in terminal
+
 ![image](https://user-images.githubusercontent.com/122373462/235655402-25519713-fc52-496a-a582-37d786f6caa6.png)
 
-###Value added to expense worksheet is the same as user information is updated.
+Value added to expense worksheet is the same as user information is updated.
 
-![image](https://user-images.githubusercontent.com/122373462/235655864-2b80aa7d-b0e1-4da5-aa8e-35963847edd7.png)
+![image](https://user-images.githubusercontent.com/122373462/235657482-3033a4f6-8c9a-431b-b230-5f6cde0649b7.png)
 
 
 ## Creating the Heroku app
