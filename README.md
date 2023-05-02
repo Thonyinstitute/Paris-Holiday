@@ -52,8 +52,8 @@ The inspiration for creating this app was drawn from love-sandwiches and the too
 
 ## Bugs
 
-. I was entering an integer values but I wanted a strings since the app is for user to submit documents and not 1,2,3 format which is int
-I fixed this by not converting the input string to integer.
+. I convected strings to integer eventhough i wanted specific kind of data to be inputted.
+
 
 
 | **Test                         | **Expected                                     | **Outcome   |
