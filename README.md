@@ -48,23 +48,86 @@ The inspiration for creating this app was drawn from love-sandwiches and the too
 
 ##Bugs
 
+. I was entering an integer values but I wanted a strings since the app is for user to submit documents and not 1,2,3 format which is int
+I fixed this by not converting the input string to integer.
 
 
-| ------   Test |  ------  Expected|  -------- Outcome|
+| **Test                         | **Expected                                     | **Outcome   |
 
-|---- Run run.py |--------Please enter data here:| -------- As Expected|
-| Input i,2,3, | Loads data are invalid| As Expected|
-| Input i,2,3,4,5 | Loads data are valid| As Expected|
-| Valid data update expensesheet| Expense worksheet updated successfully| As Expected|
-
-
+| Run run.py                     | Please enter data here                         | As Expected |
+| Input i,2,3,                   | Loads data are invalid                         | As Expected |
+| Input i,2,3,4,5                |      Loads data are valid                      | As Expected |
+| Valid data update expensesheet |     Expense worksheet updated successfully     | As Expected |
 
 
-Connect your GitHub repository and deploy as normal.
+##CI Python Linter Validation
+![image](https://user-images.githubusercontent.com/122373462/235699591-3e2f6cf7-8834-4399-a348-39c579ca690b.png)
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+##Technologies
 
------
+. Python is the programming language used to produce the game.
+. GitHub was used to hold the game repository files.
+. Gitpod and CodeAnywere were used for the coding environment.
+. Heroku was used to deploy the game to the web.
+
+
+##Version Control
+
+Version control was maintained using git within GitPod and CodeAnywhere to push code to the main repository.
+
+. From the Gitpod terminal use "git add .", which tells git you would like to make changes/updates to the files.
+. Then use "git commit -m (plus a comment)", which commits the changes and updates the files.
+. Then use the "git push" command, which pushes the committed changes to the main repository. To go back and forth between Gitpod and CodeAnywhere workspaces, use the command "git pull" to make sure all data has been brought over before working from the new space.
+
+
+##Page Deployment
+
+. Heroku CLI was used for this game's deployment. Directions on how to do that are as follows:
+
+. After creating an account and logging in, click "New" to create a new app from the dashboard.
+
+. Choose app's unique name and select your region; press "Create app".
+
+. Go to "Settings" and navigate to Config Vars.
+
+. Add Config Vars.
+
+. This app used only one:
+. KEY = PORT : VALUE = 8000.
+. Add buildpacks Python and NodeJS - in this order.
+
+. Now you may click the Deploy tab.
+
+. Scroll Down to Deployment Method and select GitHub.
+
+. Select repository to be deployed and connect to Heroku.
+
+. Scroll down to deploy:
+
+. Option 1 is selecting Automatic deploys (Will Update Automatically with every "git push"). This is what I chose for this project.
+. Option 2 is selecting Manual deploy (Needs to be manually redeployed after every change, via Heroku deploy tab)
+
+##Credits
+
+. Love sandwiches videos AJGreaves 
+. Much of the run_game function was inspired by (and learned from) Code Institute's walkthrough project: love_sandwiches
+
+. For Python code functionality, I code from: python.org, w3schools, and stackoverflow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Happy coding!
