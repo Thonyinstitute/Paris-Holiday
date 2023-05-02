@@ -43,11 +43,10 @@ The inspiration for creating this app was drawn from love-sandwiches and the too
 4. google credential authentication
 5. pyfiglet installation
 
-## 
-. This is a simple input field application with response letting user to see entered data basically.
+## Implemented features
+. The file data used in this app is originally from an excel sheet stored in google drive and on google drive created credentials from google library and enabling API to interact through the terminal.
 
 ##Bugs
-
 
 |    Test |    Expected|   Outcome|
 | ---  | --- |
