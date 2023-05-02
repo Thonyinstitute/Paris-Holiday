@@ -67,8 +67,11 @@ I fixed this by not converting the input string to integer.
 ##Technologies
 
 . Python is the programming language used to produce the game.
+
 . GitHub was used to hold the game repository files.
+
 . Gitpod and CodeAnywere were used for the coding environment.
+
 . Heroku was used to deploy the game to the web.
 
 
@@ -77,8 +80,12 @@ I fixed this by not converting the input string to integer.
 Version control was maintained using git within GitPod and CodeAnywhere to push code to the main repository.
 
 . From the Gitpod terminal use "git add .", which tells git you would like to make changes/updates to the files.
+
 . Then use "git commit -m (plus a comment)", which commits the changes and updates the files.
-. Then use the "git push" command, which pushes the committed changes to the main repository. To go back and forth between Gitpod and CodeAnywhere workspaces, use the command "git pull" to make sure all data has been brought over before working from the new space.
+
+. Then use the "git push" command, which pushes the committed changes to the main repository.
+
+. To go back and forth between Gitpod and CodeAnywhere workspaces, use the command "git pull" to make sure all data has been brought over before working from the new space.
 
 
 ##Page Deployment
@@ -106,11 +113,13 @@ Version control was maintained using git within GitPod and CodeAnywhere to push 
 . Scroll down to deploy:
 
 . Option 1 is selecting Automatic deploys (Will Update Automatically with every "git push"). This is what I chose for this project.
+
 . Option 2 is selecting Manual deploy (Needs to be manually redeployed after every change, via Heroku deploy tab)
 
 ##Credits
 
 . Love sandwiches videos AJGreaves 
+
 . Much of the run_game function was inspired by (and learned from) Code Institute's walkthrough project: love_sandwiches
 
 . For Python code functionality, I code from: python.org, w3schools, and stackoverflow
