@@ -34,7 +34,7 @@ Value added to expense worksheet is the same as user information is updated.
 ![image](https://user-images.githubusercontent.com/122373462/235657482-3033a4f6-8c9a-431b-b230-5f6cde0649b7.png)
 
 
-## Creating the Heroku app
+## Creating the Paris holiday app
 The inspiration for creating this app was drawn from love-sandwiches and the tools that was used to complete the creation are listed below.
 
 1. `heroku/python`
